@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<html> 
+     <head> 
+             <meta charset="utf-8"> 
+             <title> stopka_gaiduk  </title> 
+     </head> 
+    <body> 
+
+<script src="https://www.stats4u.net/s4u.js" data-id="8787255004" data-style="2203" async></script>
+<!-- Stats4U #8787255004 · Statystyki i ustawienia tego licznika: https://www.stats4u.net/live/8787255004 -->
+
+  <h1>Księga gości</h1>
+
+  <form id="formularz">
+    <p><input type="text" id="autor" placeholder="Twoje imię" required></p>
+    <p><textarea id="tresc" rows="4" placeholder="Wpisz wiadomość..." required></textarea></p>
+    <button type="submit">Dodaj wpis</button>
+  </form>
+
+  <hr>
+  <div id="wpisy"></div>
+
+  <script>
+    const lista = document.getElementById('wpisy');
+    const wpisy = JSON.parse(localStorage.getItem('ksiega') || '[]');
+
+    function pokazWpisy() {
+      lista.innerHTML = wpisy.map(w => `<p><strong>${w.autor}</strong>: ${w.tresc}</p>`).join('');
+    }
+
+    document.getElementById('formularz').addEventListener('submit', e => {
+      e.preventDefault();
+      wpisy.unshift({
+        autor: document.getElementById('autor').value,
+        tresc: document.getElementById('tresc').value
+      });
+      localStorage.setItem('ksiega', JSON.stringify(wpisy));
+      e.target.reset();
+      pokazWpisy();
+    });
+
+    pokazWpisy();
+  </script>
+</body>
+</html>
+
+
+<b> <h1 align=center> STOPKA - GAIDUK </h1> </b> 
+
+
+<b> <p align=center> Gdańsk, 13.11.2026 </p> </b>
+
+
+
+    </body> 
+  </html> 

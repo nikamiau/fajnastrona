@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>ZADANIE FORMULARZ</title> 
+</head> 
+<body bgcolor="#FFE6F2"> 
+
+<fieldset style="border: 1px solid #ccc; padding: 0;"> 
+    <div style="background-color: white; padding: 20px;">
+      
+        <img src="https://image.ceneostatic.pl/data/products/190323869/i-kocie-lapki-lapy-kota-z-masy-cukrowej-roz-dekoracja-3szt.jpg" align="right" border="0" width="150" height="146" alt="lapki">  
+        <img src="https://img.magnific.com/darmowe-wektory/kosc-z-konturem-serca-i-glifem_78370-7613.jpg" align="left" border="0" width="150" height="146" alt="kosc">
+
+        <center> 
+            <h1><font size="6" color="black" face="Candara">FORMULARZ ZGŁOSZENIOWY DO EKIPY</font></h1>
+            <h1><font size="6" color="black" face="Candara">WOLONTARIATU "CZTERY ŁAPY"</font></h1>
+        </center> 
+    </div>
+</fieldset>
+
+<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post"> 
+   
+    <table border="0" cellpadding="10" cellspacing="0" width="100%" style="font-family: Arial, sans-serif;"> 
+        
+
+        <tr> 
+            <td colspan="3">
+                <table style="text-align: center;">
+                    <tr>
+                        <td rowspan="2" style="padding-right: 20px;">
+                            <img src="https://i.pinimg.com/736x/5b/25/ee/5b25ee7a4e51f9219d3f8ba2d3c283c0.jpg" alt="Awatar" width="130" height="130">
+                        </td>
+                        <td><input name="imie" size="25"></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="date" name="data_ur" style="width: 150px;"></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><input name="telefon" size="20" placeholder="+48"></td>
+                    </tr>
+                    <tr>
+                        <td><b>IMIĘ I NAZWISKO</b></td>
+                        <td></td>
+                        <td><b>DATA URODZENIA</b></td>
+                        <td></td>
+                        <td><b>NR TELEFONU</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> 
+
+      
+        <tr> 
+            <td width="50%" valign="top">
+                <b>1. Z KIM CHCESZ PRACOWAĆ?</b><br><br> 
+                <input type="checkbox" name="pyt1" value="psy_duze"> PSY (DUŻE)<br><br> 
+                <input type="checkbox" name="pyt1" value="psy_male"> PSY (MAŁE)<br><br> 
+                <input type="checkbox" name="pyt1" value="koty"> KOTY<br><br> 
+                <input type="checkbox" name="pyt1" value="gryzonie_ptaki"> GRYZONIE I PTAKI<br><br> 
+                <input type="checkbox" name="pyt1" value="ryby_plazy"> RYBY I PŁAZY
+            </td> 
+ 
+            <td width="50%" valign="top" colspan="2">
+                <b>2. TWOJE DOŚWIADCZENIE:</b><br><br>
+                <select name="doswiadczenie" size="5" style="width: 300px;"> 
+                    <option value="debiutant">CAŁKOWITY DEBIUTANT</option> 
+                    <option value="wlasciciel">WŁAŚCICIEL DOMOWY</option> 
+                    <option value="zaawansowany">ZAAWANSOWANY</option> 
+                    <option value="profesjonalista">PROFESJONALISTA</option> 
+                </select>
+            </td>  
+        </tr> 
+
+    
+
+        <tr>
+            <td colspan="3" valign="top">
+                <b>3. ODPORNOŚĆ:</b><br><br>
+                <input type="radio" name="odpornosc" value="bardzo_slaba"> BARDZO SŁABA &nbsp;&nbsp;
+                <input type="radio" name="odpornosc" value="slaba"> SŁABA &nbsp;&nbsp;
+                <input type="radio" name="odpornosc" value="przecietna"> PRZECIĘTNA &nbsp;&nbsp;
+                <input type="radio" name="odpornosc" value="dobra"> DOBRA &nbsp;&nbsp;
+                <input type="radio" name="odpornosc" value="doskonala"> DOSKONAŁA
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td valign="top">
+                <b>4. W CZYM MOŻESZ NAS WESPRZEĆ?</b><br><br>
+                <input type="checkbox" name="wsparcie" value="transport"> TRANSPORT (AUTO)<br><br>
+                <input type="checkbox" name="wsparcie" value="social_media"> FOTOGRAFIA/SOCIAL MEDIA<br><br>
+                <input type="checkbox" name="wsparcie" value="majsterkowanie"> MAJSTERKOWANIE<br><br>
+                <input type="checkbox" name="wsparcie" value="teksty"> TEKSTY NA STRONĘ
+            </td>
+            <td valign="top" colspan="2">
+                <b>5. KIEDY MASZ CZAS NA WOLONTARIAT?</b><br><br>
+                <input type="checkbox" name="czas" value="7_12"> 7:00-12:00 &nbsp;&nbsp;
+                <input type="checkbox" name="czas" value="12_17"> 12:00-17:00 &nbsp;&nbsp;
+                <input type="checkbox" name="czas" value="17_20"> 17:00-20:00
+            </td>
+        </tr>
+
+       
+        <tr>
+            <td valign="top">
+                <b>6. CZYM MOŻESZ SIĘ DODATKOWO ZAOPIEKOWAĆ?</b><br><br>
+                <input type="radio" name="dodatkowe" value="wybieg"> WYBIEG ZEWNĘTRZNY/TORY PRZESZKÓD<br><br>
+                <input type="radio" name="dodatkowe" value="izolatka"> IZOLATKA DLA CHORYCH ZWIERZĄT<br><br>
+                <input type="radio" name="dodatkowe" value="magazyn"> MAGAZYN Z KARMĄ/DARAMI
+            </td>
+            <td valign="top" colspan="2">
+                <b>7. SKĄD DOWIEDZIAŁEŚ/AŚ SIĘ O NASZYM WOLONTARIACIE?</b><br><br>
+                <select name="zrodlo" size="4" style="width: 300px;">
+                    <option value="social_media">SOCIAL MEDIA</option>
+                    <option value="plakat">PLAKAT W MIEŚCIE</option>
+                    <option value="znajomi">ZNAJOMI</option>
+                    <option value="www">STRONA WWW SCHRONISKA</option>
+                </select>
+            </td>
+        </tr>
+
+     
+        <tr>
+            <td valign="top">
+                <b>8. W JAKIM OKRESIE CHCESZ POMAGAĆ?</b><br><br>
+                <input type="radio" name="okres" value="caly_rok"> CAŁY ROK &nbsp;&nbsp;
+                <input type="radio" name="okres" value="wakacje"> W WAKACJE &nbsp;&nbsp;
+                <input type="radio" name="okres" value="ferie"> FERIE &nbsp;&nbsp;
+                <input type="radio" name="okres" value="inne"> INNE
+                <br><br><br>
+                <b>HASŁO DO FORMULARZA:</b> <input type="password" name="haslo" size="15">
+            </td>
+            <td valign="top" colspan="2">
+                <b>9. NAPISZ DLACZEGO CHCESZ DO NAS DOŁĄCZYĆ I CZY MASZ W DOMU JAKIEŚ ZWIERZĘ.</b><br><br>
+                <textarea name="dlaczego" cols="50" rows="6"></textarea>
+            </td>
+        </tr>
+
+                        <tr>
+    <td align="center">
+        <button type="button" onclick="window.location.href='index.html';" style="background: white; border: 1px solid #ccc; padding: 10px; cursor: pointer; width: 170px; border-radius: 5px;">
+            <img src="https://png.pngtree.com/png-clipart/20250630/original/pngtree-paw-print-badge-png-image_21238278.png" width="50" height="50" alt="Powrót"><br><br>
+            <font size="2" face="Arial"><b>POWRÓT DO</b><br>STRONY GŁÓWNEJ</font>
+        </button>
+    </td>
+    <td align="center">
+        <button type="button" onclick="window.location.href='mailto:shuribox0@gmail.com?subject=Kopia formularza Cztery Lapy';" style="background: white; border: 1px solid #ccc; padding: 10px; cursor: pointer; width: 170px; border-radius: 5px;">
+            <img src="https://png.pngtree.com/png-clipart/20230216/ourmid/pngtree-cute-pink-envelope-icon-png-image_6602150.png" width="50" height="50" alt="Wyślij e-mail"><br><br>
+            <font size="2" face="Arial"><b>WYŚLIJ ODP.</b><br>NA MÓJ E-MAIL</font>
+        </button>
+    </td>
+    <td align="center">
+        <button type="button" onclick="alert('Link do formularza został skopiowany do schowka! Udostępnij go znajomym.');" style="background: white; border: 1px solid #ccc; padding: 10px; cursor: pointer; width: 170px; border-radius: 5px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/7579/7579714.png" width="50" height="50" alt="Udostępnij"><br><br>
+            <font size="2" face="Arial"><b>UDOSTĘPNIJ</b><br>ZNAJOMYM</font>
+        </button>
+    </td>
+</tr>
+
+        
+        <tr>
+            <td align="right">
+                <input type="submit" value="WYŚLIJ" style="height:50px; width:150px; font-weight:bold;">
+            </td>
+            <td align="left" colspan="2">
+                <input type="reset" value="WYCZYŚĆ" style="height:50px; width:150px; font-weight:bold;">
+            </td>
+        </tr>
+    </table> 
+</form> 
+
+
+</body> 
+</html>
